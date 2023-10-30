@@ -1,14 +1,29 @@
 body {
     background-color: #35155D;
-
 }
 
 .parent {
     width: 100%;
+}
+.header_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 .header_container h1 {
     font-weight: 400;
     font-size: 36px;
     font-family: 'El Messiri', sans-serif;
     color: white;
+}
+
+.header_container a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
