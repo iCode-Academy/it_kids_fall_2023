@@ -9,8 +9,46 @@
 .container:hover {
     transform: translate(50px, 50px);
     transition-property: transform;
+
+    /* transition буюу шилжилт оруулах */
+
     transition-duration: 3s;
     transition-timing-function: ease-in;
     transition-delay: 1s;
     transition: transform 3s ease-in 1s;
 }
+
+.animation {
+    background-color: #A6CF98;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    /* үүсгэсэн animation-аа ашиглацгаая */
+    animation-name: slideToRight;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+    /* товч бичиглэл */
+
+    animation: slideToRight 2.5 ease-in-out 1s infinite;
+}
+
+/* animation үүсгэх */
+
+@keyframes slideToRight {
+
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(500px);
+        background-color: #557C55;
+        border-radius: 0;
+    }
+    
+}
+
+
